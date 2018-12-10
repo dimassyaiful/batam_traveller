@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Test CRUD</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Kalau mau refresh tarik terus bro"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="goto_tambah()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+  <ion-card *ngFor="let data of this.data_load">
+    <ion-item>
+      <ion-row>
+          <ion-col col-12>
+              <h6>{{data.id}}</h6>   
+            </ion-col>
+          </ion-row>
+    </ion-item>
+    
+    <ion-card-content>
+        <ion-row>
+          <ion-col col-11>      
+             
+              <h4>Col1 :{{data.col1}}</h4>      
+              <h4>Col2 :{{data.col2}}</h4>
+            </ion-col>
+           
+          </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

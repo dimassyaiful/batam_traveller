@@ -22,8 +22,8 @@ export class AppComponent {
     },
     {
       title: 'Testcrud',
-      url: '/testcrud',
-      icon: 'list'
+      url: '/testcrud_load',
+      icon: 'cog'
     }
   ];
 
