@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title> 
+        <ion-icon name="map"></ion-icon>Data Tempat Wisata (Admin)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull down to Refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="goto_tambah()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+  <ion-card *ngFor="let data of this.data_load">
+    <ion-item>
+      <ion-row>
+          <ion-col col-12>
+              <ion-item>
+                  <ion-thumbnail slot="start">
+                    <h2><ion-icon name="rose"></ion-icon></h2>
+                     </ion-thumbnail>
+                  <ion-label>
+                    <h2>{{data.nama_tempat}}</h2>
+                    <p>Button on right</p>
+                  </ion-label>
+                  <ion-button fill="outline" slot="end" (click)="presentActionSheet(data.id_tempat)"><ion-icon name="settings"></ion-icon></ion-button>
+                </ion-item> 
+            </ion-col>
+          </ion-row>
+    </ion-item>
+    
+    <ion-card-content>
+        <ion-row>
+          <ion-col col-11>      
+             
+              <h4>Alamat :{{data.alamat}}</h4>      
+              <h4>Kategori :{{data.kategori}}</h4>
+              <h4>Waktu Buka :{{data.jam_buka}} - {{data.jam_tutup}}</h4>
+            </ion-col>
+           
+          </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

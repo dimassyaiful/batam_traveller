@@ -22,7 +22,7 @@ export class AppComponent {
     },
     {
       title: 'Tempat Wisata',
-      url: '/tambah_wisata',
+      url: '/data-wisata',
       icon: 'map'
     },
     {

@@ -41,6 +41,6 @@ export class TestcrudLoadPage implements OnInit {
   }
 
   goto_tambah(){
-    this.navCtrl.navigateForward('testcrud');
+    this.navCtrl.navigateForward('tambah-wisata');
   }
 }

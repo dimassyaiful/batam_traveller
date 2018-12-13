@@ -4,7 +4,6 @@ import 'rxjs';
 
 //provider
 import { TempatwisataService } from '../tempatwisata.service';
-import { leaveView } from '../../../node_modules/@angular/core/src/render3/instructions';
 
 @Component({
   selector: 'app-tambah-wisata',
@@ -63,7 +62,7 @@ export class TambahWisataPage implements OnInit {
 
         if(return_msg='1'){
           this.alert('Berhasil!',"Data Berhasil Ditambah");
-          //this.goback();
+          this.goback();
         }else{
           this.alert('Gagal!',"Maaf data Gagal dimasukan"); 
           console.log(return_msg); //ini biar aja untuk debug error gagalnya

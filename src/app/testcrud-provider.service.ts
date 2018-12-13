@@ -10,6 +10,7 @@ export class TestcrudProviderService {
   constructor(public http: Http) {
     console.log('Provider TestCRUD Loaded ');
    }
+  
 
   tambah(data){
     console.log('Stage 2 - Fungsi Simpan Provider Test CRUD Running ');
