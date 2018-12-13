@@ -4,7 +4,7 @@ import 'rxjs';
 
 //provider
 import { TestcrudProviderService } from '../testcrud-provider.service';
-
+ 
 
 //halaman lainya
 import { TestcrudLoadPage } from '../testcrud-load/testcrud-load.page';

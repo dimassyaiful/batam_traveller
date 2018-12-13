@@ -3,24 +3,25 @@
       <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-    <ion-title>testcrud</ion-title>
+    <ion-title>Batam Traveller</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+
     <ion-list>
 
           <ion-item> 
-            <ion-label position="floating">Column 1</ion-label>
+            <ion-label position="floating">Username</ion-label>
             <ion-input [(ngModel)] = "col1"></ion-input>
           </ion-item>
 
           <ion-item>
-              <ion-label position="floating">Column 2</ion-label>
+              <ion-label position="floating">Password</ion-label>
               <ion-input [(ngModel)] = "col2"></ion-input>
             </ion-item>
       
       </ion-list>
       <ion-button expand="full" color="success"  shape="round" (click)="simpan()">Simpan</ion-button> 
-      <ion-button expand="full" color="danger"  shape="round" (click)="goback()">Kembali</ion-button> 
+      
 </ion-content>
