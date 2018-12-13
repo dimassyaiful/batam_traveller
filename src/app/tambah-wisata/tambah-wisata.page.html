@@ -14,18 +14,18 @@
 
         <ion-item>
           <ion-label position="floating">Nama Tempat</ion-label>
-          <ion-input [(ngModel)] = "nama_tempat"></ion-input>
+          <ion-input [(ngModel)] = "nama_tempat" required></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label position="floating">Alamat</ion-label>
-            <ion-input [(ngModel)] = "alamat"></ion-input>
+            <ion-input [(ngModel)] = "alamat" required></ion-input>
         </ion-item>
         
 
         <ion-item>
             <ion-label>Kategori</ion-label>
-            <ion-select [(ngModel)] = "kategori">
+            <ion-select [(ngModel)] = "kategori" required>
               <ion-select-option value="pantai">Pantai</ion-select-option>
               <ion-select-option value="alam">Wisata Alam</ion-select-option>
               <ion-select-option value="budaya_sejarah">Budaya dan Sejarah</ion-select-option>
@@ -39,17 +39,17 @@
         
         <ion-item>
           <ion-label position="floating">Foto Tempat</ion-label>
-          <ion-input [(ngModel)] = "foto_tempat"></ion-input>
+          <ion-input [(ngModel)] = "foto_tempat" required></ion-input>
       </ion-item>
       
       <ion-item>
-          <ion-label>Jam Buka</ion-label>
-          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:MM" [(ngModel)]="jam_buka" ></ion-datetime>
+          <ion-label>Jam Buka (klik) </ion-label>
+          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="jam_buka" required ></ion-datetime>
       </ion-item>
 
       <ion-item>
-          <ion-label>Jam tutup</ion-label>
-          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:MM" [(ngModel)]="jam_tutup"></ion-datetime>
+          <ion-label>Jam tutup (klik)</ion-label>
+          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="jam_tutup" required></ion-datetime>
       </ion-item>
     
     

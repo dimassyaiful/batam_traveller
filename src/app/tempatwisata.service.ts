@@ -10,7 +10,7 @@ export class TempatwisataService {
 
   constructor(public http: Http) {  console.log('Provider TestCRUD Loaded '); }
 
-  url:any = "http://localhost/api_batamtraveller/tempat_wisata/";
+  url:any = "http://192.168.1.53/api_batamtraveller/tempat_wisata/";
 
   tambah(data){
     console.log('Stage 2 - Fungsi Simpan Provider Test CRUD Running');
