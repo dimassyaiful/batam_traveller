@@ -24,7 +24,13 @@ export class AppComponent {
       title: 'Testcrud',
       url: '/testcrud_load',
       icon: 'cog'
+    },
+    {
+      title: 'Login',
+      url: '/Login',
+      icon: 'cog'
     }
+
   ];
 
   constructor(
