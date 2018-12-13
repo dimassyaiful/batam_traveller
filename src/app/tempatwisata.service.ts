@@ -10,7 +10,7 @@ export class TempatwisataService {
 
   constructor(public http: Http) {  console.log('Provider TestCRUD Loaded '); }
 
-  url:any = "http://192.168.1.53/api_batamtraveller/tempat_wisata/";
+  url:any = "http://localhost/api_batamtraveller/tempat_wisata/";
   
   id_update_data: any; //untuk edit data
   id_hapus: any;

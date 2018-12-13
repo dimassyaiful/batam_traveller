@@ -1,14 +1,11 @@
 <ion-header>
   <ion-toolbar>
-      <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
     <ion-title>Batam Traveller</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+    <ion-img src="assets/img/logo.png"></ion-img>
     <ion-list>
 
           <ion-item> 
@@ -18,10 +15,11 @@
 
           <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input [(ngModel)] = "col2"></ion-input>
+              <ion-input [(ngModel)] = "col2" type="password"></ion-input>
             </ion-item>
       
       </ion-list>
-      <ion-button expand="full" color="success"  shape="round" (click)="simpan()">Simpan</ion-button> 
+      <ion-button expand="full" color="success"  shape="round" (click)="simpan()">  <ion-icon name="md-log-in"></ion-icon> Login </ion-button> 
+      <ion-button expand="full" shape="round" (click)="daftar()"> <ion-icon name="paper-plane"></ion-icon>  Daftar</ion-button> 
       
 </ion-content>

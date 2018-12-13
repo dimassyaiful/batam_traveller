@@ -29,12 +29,14 @@
       <ion-row>
           <ion-col col-12>
               <ion-item>
+                
                   <ion-thumbnail slot="start">
-                    <h2><ion-icon name="rose"></ion-icon></h2>
+                    
+                      <ion-img src="assets/img/{{data.foto_tempat}}"></ion-img>
+                    <!--<h2><ion-icon name="rose"></ion-icon></h2>-->
                      </ion-thumbnail>
                   <ion-label>
                     <h2>{{data.nama_tempat}}</h2>
-                    <p>Button on right</p>
                   </ion-label>
                   <ion-button fill="outline" slot="end" (click)="presentActionSheet(data.id_tempat)"><ion-icon name="settings"></ion-icon></ion-button>
                 </ion-item> 

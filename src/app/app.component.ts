@@ -21,10 +21,10 @@ export class AppComponent {
       icon: 'list'
     },
     {
-      title: 'Tempat Wisata',
+      title: 'Tempat Wisata (Admin)',
       url: '/data-wisata',
       icon: 'map'
-    },
+    }/* ,
     {
       title: 'Testcrud',
       url: '/testcrud_load',
@@ -34,7 +34,7 @@ export class AppComponent {
       title: 'Login',
       url: '/Login',
       icon: 'cog'
-    }
+    } */
 
   ];
 
@@ -49,7 +49,7 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      this.splashScreen.show();
     });
   }
 }
