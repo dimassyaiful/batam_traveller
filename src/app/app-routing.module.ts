@@ -15,7 +15,8 @@ const routes: Routes = [
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
   },
-  { path: 'testcrud', loadChildren: './testcrud/testcrud.module#TestcrudPageModule' },  { path: 'testcrud_load', loadChildren: './testcrud-load/testcrud-load.module#TestcrudLoadPageModule' }
+  { path: 'testcrud', loadChildren: './testcrud/testcrud.module#TestcrudPageModule' },  { path: 'testcrud_load', loadChildren: './testcrud-load/testcrud-load.module#TestcrudLoadPageModule' },
+  { path: 'tambah_wisata', loadChildren: './tambah-wisata/tambah-wisata.module#TambahWisataPageModule' }
 
 ];
 

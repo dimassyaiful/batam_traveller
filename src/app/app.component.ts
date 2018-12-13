@@ -21,6 +21,11 @@ export class AppComponent {
       icon: 'list'
     },
     {
+      title: 'Tempat Wisata',
+      url: '/tambah_wisata',
+      icon: 'map'
+    },
+    {
       title: 'Testcrud',
       url: '/testcrud_load',
       icon: 'cog'
