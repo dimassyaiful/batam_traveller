@@ -5,7 +5,7 @@ import 'rxjs';
 
 //provider
 import { UserService } from '../user.service';
- 
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginPage implements OnInit {
   col2: String;
 
   constructor(public navCtrl: NavController, public userProvider:UserService,
-    private modalCtrl:ModalController,private alertCtrl: AlertController) {}
+    private modalCtrl:ModalController,private alertCtrl: AlertController, public appcomp: AppComponent) {}
 
   ngOnInit() {
   }
@@ -51,6 +51,7 @@ export class LoginPage implements OnInit {
       if(return_msg==1){
         this.userProvider.session='admin';
         this.alert('Berhasil!',"Berhasil Login");
+        this.appcomp.initializeApp();
         this.navCtrl.navigateForward('home');
       }else{
         this.alert('Gagal!',"Maaf Gagal Login"); 
