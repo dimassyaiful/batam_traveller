@@ -6,8 +6,20 @@
     <ion-title>
       Batam Traveller
     </ion-title>
+   
   </ion-toolbar>
+ 
 </ion-header>
+
+<ion-content padding>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="arrow-dropdown"
+        pullingText="Pull down to Refresh"
+        refreshingSpinner="circles"
+        refreshingText="Refreshing...">
+      </ion-refresher-content>
+    </ion-refresher>
 
 <ion-content>
     <ion-card class="welcome-card">
@@ -16,7 +28,9 @@
         <ion-card-subtitle>Batam Island</ion-card-subtitle>
         <ion-card-title>Batam Traveller</ion-card-title>
       </ion-card-header>
-     
+      <ion-card-content>
+        <p>Batam Traveller adalah sebuah aplikasi untuk melihat tempat wisata yang ada di kota batam. </p>
+      </ion-card-content>
     </ion-card>
     <ion-list lines="none">
       <ion-list-header>
@@ -36,7 +50,7 @@
                       <ion-label>
                         <h2>{{data.nama_tempat}}</h2>
                       </ion-label>
-                      <ion-button fill="outline" slot="end" (click)="presentActionSheet(data.id_tempat)"><ion-icon name="settings"></ion-icon></ion-button>
+                      
                     </ion-item> 
                 </ion-col>
               </ion-row>
