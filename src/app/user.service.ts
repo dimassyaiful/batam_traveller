@@ -6,7 +6,7 @@ import {Http,Response} from '@angular/http';
 })
 export class UserService {
  
-  session:String;
+  session:String = '0';
   constructor(public http: Http) {
     console.log('Provider Login Loaded ');
    }
